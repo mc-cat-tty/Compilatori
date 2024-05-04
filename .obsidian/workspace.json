@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "e8b2251f89113d96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "17. UD e DU Chans.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "837af3af38052a58",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,12 +195,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d0ef4eeb4d1a68a",
+  "active": "e8b2251f89113d96",
   "lastOpenFiles": [
+    "18. SSA.md",
+    "17. UD e DU Chans.md",
     "TrickyLoop 1.png",
     "TrickyLoop.png",
     "16. Analisi Globale.md",
-    "17. UD e DU Chans.md",
     "EserciziBackend/TestPass/loop.ll",
     "C. Progettazione & Kaleidoscope's AST.md",
     "D. LLVM local optimization passes.md",
