@@ -33,8 +33,8 @@ define i32 @loop(i32 noundef %0, i32 noundef %1, i32 noundef %2) #0 {
   br label %10
 
 10:                                               ; preds = %17, %3
-  %11 = load i32, ptr %7, align 4
-  %12 = load i32, ptr %5, align 4
+  %11 = add i32 1, 1
+  %12 = add i32 %11, 1
   %13 = icmp slt i32 %11, %12
   br i1 %13, label %14, label %20
 

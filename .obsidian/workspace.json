@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "17. UD e DU Chans.md",
+                "file": "18. SSA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "64cc45e34352b6b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "19. LICM.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "17. UD e DU Chans.md",
+                "file": "19. LICM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "17. UD e DU Chans.md",
+                "file": "19. LICM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "17. UD e DU Chans.md"
+                "file": "19. LICM.md"
               }
             }
           }
@@ -195,13 +207,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8b2251f89113d96",
+  "active": "64cc45e34352b6b5",
   "lastOpenFiles": [
     "18. SSA.md",
+    "19. LICM.md",
+    "16. Analisi Globale.md",
     "17. UD e DU Chans.md",
     "TrickyLoop 1.png",
     "TrickyLoop.png",
-    "16. Analisi Globale.md",
     "EserciziBackend/TestPass/loop.ll",
     "C. Progettazione & Kaleidoscope's AST.md",
     "D. LLVM local optimization passes.md",
