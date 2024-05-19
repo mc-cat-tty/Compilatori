@@ -12,51 +12,50 @@ define void @foo(i32 noundef %0, i32 noundef %1) #0 {
   %5 = add nsw i32 %0, 4
   %6 = add nsw i32 %0, 3
   %7 = add nsw i32 %3, 7
-  %8 = add nsw i32 %0, 7
-  %9 = add nsw i32 %4, 5
-  br label %10
+  %8 = add nsw i32 %4, 5
+  br label %9
 
-10:                                               ; preds = %20, %2
-  %.05 = phi i32 [ 0, %2 ], [ %9, %20 ]
-  %.04 = phi i32 [ 0, %2 ], [ %21, %20 ]
-  %.03 = phi i32 [ 0, %2 ], [ %7, %20 ]
-  %.01 = phi i32 [ 9, %2 ], [ %.1, %20 ]
-  %.0 = phi i32 [ %1, %2 ], [ %11, %20 ]
-  %11 = add nsw i32 %.0, 1
-  %12 = icmp slt i32 %11, 5
-  br i1 %12, label %13, label %15
+9:                                                ; preds = %19, %2
+  %.05 = phi i32 [ 0, %2 ], [ %8, %19 ]
+  %.04 = phi i32 [ 0, %2 ], [ %20, %19 ]
+  %.03 = phi i32 [ 0, %2 ], [ %7, %19 ]
+  %.01 = phi i32 [ 9, %2 ], [ %.1, %19 ]
+  %.0 = phi i32 [ %1, %2 ], [ %10, %19 ]
+  %10 = add nsw i32 %.0, 1
+  %11 = icmp slt i32 %10, 5
+  br i1 %11, label %12, label %14
 
-13:                                               ; preds = %10
-  %14 = add nsw i32 %.01, 2
-  br label %20
+12:                                               ; preds = %9
+  %13 = add nsw i32 %.01, 2
+  br label %19
 
-15:                                               ; preds = %10
-  %16 = sub nsw i32 %.01, 1
-  %17 = icmp sge i32 %11, 10
-  br i1 %17, label %18, label %19
+14:                                               ; preds = %9
+  %15 = sub nsw i32 %.01, 1
+  %16 = icmp sge i32 %10, 10
+  br i1 %16, label %17, label %18
 
-18:                                               ; preds = %15
-  %.lcssa4 = phi i32 [ %16, %15 ]
-  %.lcssa3 = phi i32 [ %5, %15 ]
-  %.05.lcssa = phi i32 [ %.05, %15 ]
-  %.04.lcssa = phi i32 [ %.04, %15 ]
-  %.03.lcssa = phi i32 [ %.03, %15 ]
-  %.lcssa2 = phi i32 [ %11, %15 ]
-  %.lcssa1 = phi i32 [ %3, %15 ]
-  %.lcssa = phi i32 [ %4, %15 ]
-  br label %22
+17:                                               ; preds = %14
+  %.lcssa4 = phi i32 [ %15, %14 ]
+  %.lcssa3 = phi i32 [ %5, %14 ]
+  %.05.lcssa = phi i32 [ %.05, %14 ]
+  %.04.lcssa = phi i32 [ %.04, %14 ]
+  %.03.lcssa = phi i32 [ %.03, %14 ]
+  %.lcssa2 = phi i32 [ %10, %14 ]
+  %.lcssa1 = phi i32 [ %3, %14 ]
+  %.lcssa = phi i32 [ %4, %14 ]
+  br label %21
 
-19:                                               ; preds = %15
-  br label %20
+18:                                               ; preds = %14
+  br label %19
 
-20:                                               ; preds = %19, %13
-  %.02 = phi i32 [ %6, %13 ], [ %5, %19 ]
-  %.1 = phi i32 [ %14, %13 ], [ %16, %19 ]
-  %21 = add nsw i32 %.02, 2
-  br label %10
+19:                                               ; preds = %18, %12
+  %.02 = phi i32 [ %6, %12 ], [ %5, %18 ]
+  %.1 = phi i32 [ %13, %12 ], [ %15, %18 ]
+  %20 = add nsw i32 %.02, 2
+  br label %9
 
-22:                                               ; preds = %18
-  %23 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %.lcssa4, i32 noundef %.lcssa3, i32 noundef %.03.lcssa, i32 noundef %.04.lcssa, i32 noundef %.lcssa, i32 noundef %.05.lcssa, i32 noundef %.lcssa1, i32 noundef %.lcssa2)
+21:                                               ; preds = %17
+  %22 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %.lcssa4, i32 noundef %.lcssa3, i32 noundef %.03.lcssa, i32 noundef %.04.lcssa, i32 noundef %.lcssa, i32 noundef %.05.lcssa, i32 noundef %.lcssa1, i32 noundef %.lcssa2)
   ret void
 }
 
