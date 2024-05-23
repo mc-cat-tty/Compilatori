@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "19. LICM.md",
+                "file": "20. Memory usage optimizations.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 234.5
   },
   "right": {
     "id": "8bda8b135354a7dc",
@@ -207,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 232.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,7 +219,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d0dd8f54de34ab67",
+  "active": "64cc45e34352b6b5",
   "lastOpenFiles": [
     "19. LICM.md",
     "20. Memory usage optimizations.md",
