@@ -221,8 +221,9 @@
   },
   "active": "64cc45e34352b6b5",
   "lastOpenFiles": [
-    "19. LICM.md",
+    "A. Ripasso C++.md",
     "20. Memory usage optimizations.md",
+    "19. LICM.md",
     "16. Analisi Globale.md",
     "18. SSA.md",
     "17. UD e DU Chans.md",
@@ -257,7 +258,6 @@
     "3. Lexer.md",
     "8. Parser bottom-up.md",
     "4. FSM.md",
-    "A. Ripasso C++.md",
     "5. Linguaggi context-free e grammatiche.md",
     "2. Alfabeti, Linguaggi ed Espressioni Regolari.md"
   ]
